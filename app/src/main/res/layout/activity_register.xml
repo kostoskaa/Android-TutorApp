@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundtutor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="90dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="40dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/email1"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/name1"
+            android:hint="Name"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/password1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/confirmpassword"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"/>
+        <RadioGroup
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/rgroup"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor"
+                android:text="Tutor"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:textColor="@color/gold"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/student"
+                android:text="Student"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:textColor="@color/gold"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:id="@+id/registerbutton"
+            android:text="Register"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:backgroundTint="@color/gold"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:id="@+id/redirect2"
+            android:text="Already have an account? Login"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/darkblue"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

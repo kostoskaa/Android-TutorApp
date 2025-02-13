@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClass"
+    android:background="@drawable/backgroundtutor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Add Class"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/gold"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Subject"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Details"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Price"
+            android:inputType="number"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Duration"
+            android:inputType="time"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Date"
+            android:inputType="date"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Address"
+            android:padding="15dp" />
+        <Button
+            android:id="@+id/submitclass"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:backgroundTint="@color/gold"/>
+ </LinearLayout>
+
+</RelativeLayout>
